@@ -3,8 +3,10 @@ MAINTAINER Ashwin Vishnu Mohanan <avmo@kth.se>
 
 RUN apt-get update
 
+RUN apt-get install -y --no-install-recommends git
 RUN apt-get install -y --no-install-recommends gfortran
 RUN apt-get install -y --no-install-recommends libopenmpi-dev
+
 
 RUN rm -rf /var/lib/apt/lists/*
 
